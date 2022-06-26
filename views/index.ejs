@@ -1,0 +1,25 @@
+<%- include("./partials/header") -%>
+
+    <%- include("./partials/navbar") -%>
+
+        <div class="container mt-5 ">
+            <h3>All Blogs</h3>
+            <% for(var i=0;i < data.length;i++) {%>
+                <div class="card mb-3">
+                    <div class="card-body mt-3">
+                        <!-- <p class="text-muted">
+                            <%= data[i].postedAt%>
+                        </p> -->
+                        <h5 class="card-title">
+                            <%= data[i].title %>
+                        </h5>
+                        <p class="card-text">
+                            <%= data[i].content.slice(0,99) %>
+                        </p>
+                        <a href="#" class="btn btn-primary">Read more</a>
+                    </div>
+                </div>
+            <%}%>
+        </div>
+
+        <%- include("./partials/footer") -%>
