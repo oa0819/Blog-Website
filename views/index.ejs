@@ -14,9 +14,9 @@
                             <%= data[i].title %>
                         </h5>
                         <p class="card-text">
-                            <%= data[i].content.slice(0,99) %>
+                            <%= data[i].content.slice(0,99) %>.....<a href="/blog/<%= data[i]._id %>">Read more</a>
                         </p>
-                        <a href="#" class="btn btn-primary">Read more</a>
+                        <a href="/blog/<%= data[i]._id %>" class="btn btn-primary">Read more</a>
                     </div>
                 </div>
             <%}%>

@@ -25,5 +25,6 @@ app.set("view engine", "ejs");
 
 app.use(require("./routes/index"))
 app.use(require("./routes/compose"))
+app.use(require("./routes/blog"))
 
 app.listen(3000);

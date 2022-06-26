@@ -32,5 +32,5 @@ router.get('/compose', (req, res) => {
 
 
     })
-db.collection('SavedBlogs')
+// db.collection('SavedBlogs')
 module.exports = router;
