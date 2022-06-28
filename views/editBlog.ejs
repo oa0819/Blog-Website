@@ -1,0 +1,16 @@
+<%- include("./partials/header") -%>
+<%- include("./partials/navbar") -%>
+
+<div class="container mt-5">
+    <h3 class="my-3">Edit your blog</h3>
+    <form action="/edit/<%= blog._id %>" method="post">
+        <input type="text" name="title" value="<%= blog.title %>" class="form-control" required>
+        <textarea name="content" id="" cols="30" rows="10" class="form-control mt-3" required><%= blog.content %></textarea>
+        <input type="submit" value="edit" class="btn btn-md btn-danger mt-3">
+    </form>
+</div>
+
+
+
+
+<%- include("./partials/footer") -%>
