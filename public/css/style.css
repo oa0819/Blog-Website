@@ -1,0 +1,19 @@
+#top-heading {
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#name {
+    font-family: 'Arima', cursive;
+    letter-spacing: 0.2rem;
+    font-size: 6rem;
+}
+
+.nav-item {
+    width: 185px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left: 2px solid black;
+}

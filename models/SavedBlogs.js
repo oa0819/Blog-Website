@@ -10,9 +10,14 @@ const Schema = new mongoose.Schema({
         type: String,
         required: true
     },
-    postedAt: {
+    Date: {
         type: String,
         default: new Date().toString()
+    },
+    image:{
+        type: Buffer,
+        required:true,
+        contentType:String
     }
 })
 

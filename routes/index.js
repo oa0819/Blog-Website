@@ -5,7 +5,7 @@ const router = require('express').Router();
 
 router.get('/', async(req, res) => {
     var db = mongoose.connection;
-    db.collection('SavedBlogs').find({}).toArray((err, result) => {
+    await db.collection('SavedBlogs').find({}).toArray((err, result) => {
         if (err) throw err;
         // console.log(result);
         res.render("index", {data: result});
