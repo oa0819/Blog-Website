@@ -15,9 +15,7 @@ const Schema = new mongoose.Schema({
         default: new Date().toString()
     },
     image:{
-        type: Buffer,
-        required:true,
-        contentType:String
+        type: String
     }
 })
 
